@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+<head>{% include head.html %}</head>
+
+<body>
+{% include article.html%}
+</body>
