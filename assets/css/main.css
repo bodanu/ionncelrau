@@ -61,6 +61,10 @@ body {
     height: 20vh;
   }
 }
+.carousel-inner {
+  max-height: 180px;
+  overflow: hidden;
+}
 .page-background-clicked {
   height: 20vh;
   animation: height 5s;
