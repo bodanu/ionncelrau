@@ -58,12 +58,13 @@ body {
   }
 }
 .carousel-inner {
-  max-height: 180px;
+  min-height: 300px;
+  max-height: 300px;
   overflow: hidden;
 }
 .page-background-clicked {
   height: 20vh;
-  animation: height 5s;
+  animation: height 2s;
 }
 #titlu {
   display: none;
@@ -82,7 +83,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .cta {
-    top: 10%;
+    top: 5%;
   }
 }
 
@@ -90,7 +91,7 @@ body {
   margin-top: 20px;
 }
 #footer {
-  height: 19rem;
+  height: 14rem;
   background-size: cover;
   background-position: bottom;
   background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg");

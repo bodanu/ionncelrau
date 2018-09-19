@@ -18,9 +18,13 @@ email: ionncelrau@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Best option for all your problems is Ionncelrau Solutions!!
 baseurl: "/ionncelrau" # the subpath of your site, e.g. /blog
-url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "localhost:4000/ionncelrau" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BogdanHiriscau
 github_username: bodanu
+
+#accept all conections
+host: 0.0.0.0
+port: 4000
 
 # Build settings
 sass:

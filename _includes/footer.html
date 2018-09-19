@@ -10,10 +10,17 @@
                 <div id="links-list">
 
 
-                    <ul id="links-link">
-                        <li v-for="i in links"><a class="text-white" href="#">{{i.nume}}</a></li>
+                    <nav>
+                        <ul>
+                            {% for page in site.pages %} {% if page.title %}
+                            <li><a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                            {% endif %} {% endfor %}
+                            <li><a class="nav-link" href="{{ "/ionncelrau" | prepend: site.baseurl }}">Home</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </nav>
 
-                    </ul>
 
 
                 </div>
