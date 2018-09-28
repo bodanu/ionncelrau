@@ -45,3 +45,22 @@ a:hover {
   background-position: center;
   background-size: cover;
 }
+#titlu2 {
+  padding: 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+#content {
+  display: block;
+  color: blueviolet;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.sticky + .text-center {
+  padding-top: 102px;
+}

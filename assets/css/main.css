@@ -68,6 +68,9 @@ body {
 }
 #titlu {
   display: none;
+  padding: 20px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .cta {
@@ -91,8 +94,52 @@ body {
   margin-top: 20px;
 }
 #footer {
-  height: 14rem;
+  height: 16rem;
   background-size: cover;
   background-position: bottom;
   background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg");
+}
+.modal-header,
+.modal-footer {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+}
+#blog-list ul li {
+  list-style: none;
+}
+#blog-list a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: inherit;
+  text-align: center;
+}
+#blog-list ul li p {
+  font-size: 1.4rem;
+}
+#blog-description p {
+  font-size: 1.4rem;
+  padding: 2px;
+}
+#blog-description {
+  padding: 0;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html {
+  max-width: 100%;
+}
+#pics .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
 }

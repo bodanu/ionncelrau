@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
-    <a href="/ionncelrau/ionncelrau/" class="navbar-brand">
+<nav id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+    <a href="/ionncelrau/" class="navbar-brand">
         <img src="/ionncelrau/assets/img/company-logo.png" width="130" height="60">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -11,30 +11,7 @@
             {% for page in site.pages %} {% if page.title %}
             <li class="nav-item"><a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
             {% endif %} {% endfor %}
-            <!-- <ul id="menu" class="navbar-nav">
-            <li class="nav-item">
-                <a title="primul" class="nav-link" href="/about/">Links</a>
-            </li>
-            <li class="nav-item">
-                <a title="doilea" class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a title="treilea" class="nav-link" href="#projects">Pcts</a>
-            </li>
-            <li class="nav-item">
-                <a title="patrulea" class="nav-link" href="#projects">Cacao</a>
-            </li>
-            <li class="nav-item">
-                <a title="cacao" class="nav-link" href="#plans">Future Plans</a>
-            </li>
-            <li class="nav-item">
-                <a title="primul" class="nav-link" href="#projets">Nothing</a>
-            </li>
-            <li class="nav-item">
-                <a title="primul" class="nav-link" href="#plans">Testing</a>
-            </li>
 
-        </ul> -->
     </div>
 
 

@@ -5,19 +5,6 @@ $("document").ready(function() {
 
   $("#navbar").hide();
 
-  $(function() {
-    $(window).scroll(function() {
-      if ($(this).scrollTop() < 100) {
-        $("#navbar").fadeIn(400);
-      }
-      if ($(this).scrollTop() > 0) {
-        $("#navbar").fadeIn(400);
-      } else {
-        $("#navbar").fadeOut();
-      }
-    });
-  });
-
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
   });
@@ -33,4 +20,17 @@ $("document").ready(function() {
     $(".page-background").addClass("page-background-clicked");
     $("#titlu").css("display", "block");
   });
+
+  var div = $("#sticky-nav").offset().top; // get top offset of your div
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= div) {
+      $("#sticky-nav").addClass("sticky");
+    } else {
+      $("#sticky-nav").removeClass("sticky");
+    }
+  });
+  console.log(div);
 });

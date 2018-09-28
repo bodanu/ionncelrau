@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include blog-head.html %}
+
+<body>
+    {% include blog-header.html %}
+
+    <div id="wrapper" class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm d-flex align-items-center">
+                <div class="side-content-wrapper">
+                    {% include blog-menu-sidebar.html %}
+                </div>
+            </div>
+            <div class="col-lg-8">
+                {{content}}
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+        <div class="row">
+            {% include counter.html %}
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
