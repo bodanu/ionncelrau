@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: "Travell"
+title: "Travel"
 date: 2018-09-19 11:08:19 +0300
 categories: ionncelrau update
 image: road.jpg
