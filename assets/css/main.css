@@ -96,6 +96,8 @@ body {
 #footer {
   height: 16rem;
   background-size: cover;
+  bottom: 0;
+  margin-bottom: 0;
   background-position: bottom;
   background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg");
 }
