@@ -122,18 +122,11 @@ body {
 }
 #blog-description p {
   font-size: 1.4rem;
-  padding: 2px;
 }
 #blog-description {
   padding: 0;
 }
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-html {
-  max-width: 100%;
-}
+
 #pics .content {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
@@ -142,4 +135,13 @@ html {
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
+}
+@media screen and (max-width: 600px) {
+  #pics .content {
+    padding: 1px;
+  }
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }

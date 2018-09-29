@@ -8,4 +8,4 @@ excerpt_separator: <!--more-->
 ---
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, id quo. Repellendus et enim consequuntur ut iusto a molestias dolor, nemo eligendi sunt temporibus. Reprehenderit consectetur ex officiis iure! Facilis at ratione eos sequi earum totam eaque beatae quidem iure. Eaque, illum? <!--more-->Quidem quas modi, quod laborum in laudantium possimus!
-![My helpful screenshot]({{site.url}}/ionncelrau/assets/img/responsive.png)
+![My helpful screenshot]({{site.baseurl}}/assets/img/responsive.png)
