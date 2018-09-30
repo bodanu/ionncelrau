@@ -64,7 +64,7 @@ body {
 }
 .page-background-clicked {
   height: 0vh;
-  animation: height 2s;
+  animation: height 1s;
 }
 #titlu {
   display: none;
@@ -146,4 +146,14 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+.img-wrapper{
+  min-width: 100%;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#navbar{
+  background-color: rgba(49, 43, 43, 0.5);
 }
