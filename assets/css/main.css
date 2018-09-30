@@ -54,7 +54,7 @@ body {
     height: 100vh;
   }
   to {
-    height: 20vh;
+    height: 0vh;
   }
 }
 .carousel-inner {
@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 .page-background-clicked {
-  height: 20vh;
+  height: 0vh;
   animation: height 2s;
 }
 #titlu {
