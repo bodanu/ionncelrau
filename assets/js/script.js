@@ -17,6 +17,16 @@ $("document").ready(function() {
       }
     });
   });
+  $("document").ready(function() {
+    $("#intro-text, #intro-text2")
+      .animate({ left: "210vw", opacity: "1.0" }, "slow")
+
+      .css("display", "block");
+    $("#intro-text3")
+      .animate({ left: "130vw", opacity: "1.0" }, "slow")
+
+      .css("display", "block");
+  });
 
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
@@ -31,6 +41,5 @@ $("document").ready(function() {
   $("#inchide").on("click", function() {
     $("#cta").fadeOut(500);
     $(".page-background").addClass("page-background-clicked");
-    $("#titlu").css("display", "block");
   });
 });

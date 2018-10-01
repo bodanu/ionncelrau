@@ -26,7 +26,7 @@ github_username: jekyll
 # Build settings
 sass:
   sass_dir: _sass
-include: ["_pages"]
+include: ["_pages, _snippets"]
 theme: minima
 markdown: kramdown
 plugins:
