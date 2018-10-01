@@ -4,4 +4,8 @@
 
 layout: posts
 permalink: /
+identifier: home
 ---
+
+{% include social-media.html %}
+{% assign media = social-media %}

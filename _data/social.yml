@@ -1,0 +1,20 @@
+media:
+  - title: twitter
+    image: assets/img/twitter.svg
+    target: https://twitter.com/HiriscauBogdan
+    date: Aug 23, 2017
+
+  - title: facebook
+    image: assets/img/facebook.svg
+    target: https://www.facebook.com/bogdan0hiriscau
+    date: Aug 23, 2017
+
+  - title: github
+    image: assets/img/github.svg
+    target: https://github.com/bodanu
+    date: Aug 23, 2017
+
+  - title: instagram
+    image: assets/img/instagram.svg
+    target: https://www.instagram.com/bogdan.hiriscau/?
+    date: Aug 23, 2017

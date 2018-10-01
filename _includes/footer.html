@@ -3,7 +3,13 @@
         <div class="row text-center">
             <div id="social" class="col-xs-12 col-sm-4 col-md-4">
                 <h5>Find me on social media</h5>
-
+                <ul>
+                    {% for item in site.data.social.media %}
+                    <li>
+                        <a href="{{item.target}}"><img id="social-svg" src="{{site.baseurl}}/{{item.image}}" alt=""></a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <h5>Site links</h5>
@@ -27,6 +33,7 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <h5>Resources</h5>
+
             </div>
 
         </div>

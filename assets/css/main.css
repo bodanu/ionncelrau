@@ -27,7 +27,7 @@
   color: aliceblue;
 }
 body {
-  background-color: rgb(243, 240, 235);
+  background-color: rgb(236, 236, 236);
   width: 100%;
 }
 
@@ -79,7 +79,7 @@ body {
   max-width: 40vw;
   top: 1vw;
   left: 1vw;
-
+  display: none;
   /* transform: translateY(-35%); */
 }
 @media screen and (max-width: 600px) {
@@ -176,7 +176,7 @@ body {
 #intro-text {
   max-width: 40%;
   position: absolute;
-  bottom: 55vw;
+  bottom: 50vw;
   padding: 20px;
   right: 0;
   font-size: 3vw;
@@ -188,7 +188,7 @@ body {
 #intro-text2 {
   position: absolute;
   max-width: 45%;
-  bottom: 36vw;
+  bottom: 30vw;
   padding: 20px;
   right: 0;
   font-size: 2vw;
@@ -201,7 +201,7 @@ body {
 #intro-text3 {
   position: absolute;
   max-width: 65%;
-  bottom: 2vw;
+  bottom: 1vw;
   padding: 20px;
   right: 0;
   font-size: 2vw;
@@ -214,19 +214,40 @@ body {
   position: fixed;
   max-width: 5%;
   bottom: 5vw;
-  padding: 20px;
-  right: 0;
+  padding: 28px;
+  right: 1vw;
   font-size: 2vw;
   /* display: none; */
   /* margin-left: -40vw; */
   opacity: 1;
   overflow-x: hidden;
   z-index: 102;
+  margin-right: 0;
 }
 @media screen and (max-width: 600px) {
   #social-media svg {
-    height: 24px;
-    width: 24px;
-    right: 6vw;
+    height: 28px;
+    width: 28px;
+
+    right: 4vw;
   }
+}
+#social-svg {
+  height: 55px;
+  width: 55px;
+}
+#social ul li {
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+#social ul {
+  margin-top: 3vw;
+}
+#social {
+  text-align: center;
+}
+#links-list ul li {
+  list-style: none;
+  display: inline;
 }

@@ -23,7 +23,7 @@ $("document").ready(function() {
 
       .css("display", "block");
     $("#intro-text3")
-      .animate({ left: "130vw", opacity: "1.0" }, "slow")
+      .animate({ left: "140vw", opacity: "1.0" }, "slow")
 
       .css("display", "block");
   });

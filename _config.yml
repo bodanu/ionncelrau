@@ -29,6 +29,9 @@ sass:
 include: ["_pages, _snippets"]
 theme: minima
 markdown: kramdown
+collections:
+  media:
+    output: true
 plugins:
   - jekyll-feed
   - jekyll-admin
