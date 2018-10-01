@@ -146,7 +146,7 @@ body {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
+  min-width: 100%; /* Full width */
   padding: 20px; /* Some padding */
 }
 @media screen and (max-width: 600px) {
@@ -154,6 +154,7 @@ body {
     padding: 1px;
   }
 }
+
 .row {
   margin-left: 0;
   margin-right: 0;

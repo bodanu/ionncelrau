@@ -1,0 +1,48 @@
+---
+layout: blog
+title: Tests
+permalink: /tests/
+---
+<div id="blog-list" class="row">
+    <div class="col-sm-4">
+        <ul>
+            {% for post in site.posts %}
+            <li class="text-center">
+                <a class="text-center" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+                {{ post.excerpt }}{{post.date}}
+            </li><br><br><br><br><br>
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        {% for post in site.posts %}
+        <div id="pics" class="col">
+            <a href="{{site.baseurl}}{{ post.url }}"><img class="d-block w-100" src="{{site.baseurl}}/assets/img/{{post.image}}"></a>
+            <div class="content">
+                {{post.excerpt}}
+            </div>
+        </div><br>
+        <hr>
+
+        {% endfor %}
+    </div>
+    <div id="blog-description" class="col-sm-4 text-center">
+        <h4>Latest posts</h4>
+        <p>In this section you can find my latest posts, learn about anything new
+            and check out all the cool pictures from my collection.
+        </p>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Labore cum consectetur sint autem neque. Maiores
+            dolore numquam pariatur laborum minus nobis quisquam placeat corporis aut magnam
+            quas cumque quaerat iusto ducimus mollitia necessitatibus earum odio voluptatibus
+            reiciendis, aliquid ratione nulla illum? Fugit culpa fugiat eligendi numquam?
+            Saepe, suscipit vel soluta sit optio delectus culpa natus minima rerum tenetur
+            voluptates. Dolore corrupti excepturi quidem alias nulla esse odit voluptas nihil
+            ed ullam ea, nostrum numquam. Dolore ipsam distinctio repudiandae rem veniam
+            laboriosam, nulla qui deserunt dicta ut. Molestias ad magni fugiat quibusdam
+            impedit?
+            Omnis et voluptas ducimus neque temporibus. Voluptatem, temporibus.</p>
+    </div>
+</div>

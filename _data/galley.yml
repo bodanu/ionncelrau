@@ -1,0 +1,17 @@
+gallery:
+  - title: Job
+    image: assets/img/gallery_job.jpg
+    target: https://twitter.com/HiriscauBogdan
+    date: Aug 23, 2015
+  - title: Social Media
+    image: assets/img/gallery_media.jpg
+    target: https://twitter.com/HiriscauBogdan
+    date: Aug 23, 2016
+  - title: Travell
+    image: assets/img/gallery_travel.jpg
+    target: https://twitter.com/HiriscauBogdan
+    date: Aug 23, 2018
+  - title: Entertainment
+    image: assets/img/gallery_dice.jpg
+    target: https://twitter.com/HiriscauBogdan
+    date: Aug 23, 2017
