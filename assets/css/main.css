@@ -223,3 +223,10 @@ body {
   overflow-x: hidden;
   z-index: 102;
 }
+@media screen and (max-width: 600px) {
+  #social-media svg {
+    height: 24px;
+    width: 24px;
+    right: 6vw;
+  }
+}
