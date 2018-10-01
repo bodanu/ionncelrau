@@ -1,6 +1,6 @@
 $("document").ready(function() {
   $("#cta")
-    .delay(1000)
+    .delay(1500)
     .fadeIn(1000);
 
   $("#navbar").hide();
@@ -18,13 +18,17 @@ $("document").ready(function() {
     });
   });
   $("document").ready(function() {
-    $("#intro-text, #intro-text2")
+    $("#intro-text")
+      .delay(50)
       .animate({ left: "210vw", opacity: "1.0" }, "slow")
-
+      .css("display", "block");
+    $("#intro-text2")
+      .delay(250)
+      .animate({ left: "210vw", opacity: "1.0" }, "slow")
       .css("display", "block");
     $("#intro-text3")
+      .delay(400)
       .animate({ left: "140vw", opacity: "1.0" }, "slow")
-
       .css("display", "block");
   });
 

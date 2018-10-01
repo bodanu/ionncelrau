@@ -1,4 +1,4 @@
-<div class="container-fluid row text-center">
+<div id="middle-wrap" class="container-fluid row text-center">
     <div id="links" class="col-sm-4">
         <h2>Links</h2>
         <hr>
@@ -78,7 +78,7 @@
     {% include counter.html %}
 </div>
 
-<hr>
+
 
 {% include gallery.html %}
 <hr>
@@ -100,8 +100,8 @@
         {% for post in site.posts %}
         <div id="pics" class="col">
             <a href="{{site.baseurl}}{{ post.url }}"><img class="d-block w-100" src="{{site.baseurl}}/assets/img/{{post.image}}"></a>
-            <div class="content">
-                {{post.excerpt}}
+            <div class="content text-center">
+                {{post.title}}
             </div>
         </div><br>
         <hr>
