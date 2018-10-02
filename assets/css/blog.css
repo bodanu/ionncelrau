@@ -84,3 +84,71 @@ a:hover {
   color: white;
   font-size: 24px;
 }
+.post-container .post-image-caption {
+  position: absolute;
+  /* Position the background text */
+  bottom: 0;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+  min-width: 100%;
+  /* Full width */
+  padding: 20px;
+  /* Some padding */
+}
+
+.post-container {
+  padding: 5% !important;
+}
+
+.post-image {
+  transition: all 0.2s ease-in-out;
+}
+
+.post-image:hover {
+  transform: scale(1.1);
+}
+.footer-form {
+  width: 70%;
+  text-align: center;
+}
+#social-media {
+  position: fixed;
+  max-width: 5%;
+  bottom: 5vw;
+  padding: 68px;
+  right: 1vw;
+  font-size: 2vw;
+
+  opacity: 1;
+  overflow-x: hidden;
+  z-index: 102;
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  #social-media svg {
+    height: 28px;
+    width: 28px;
+
+    right: 4vw;
+  }
+}
+#social-svg {
+  height: 55px;
+  width: 55px;
+}
+#social ul li {
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+#social ul {
+  margin-top: 3vw;
+}
+#social {
+  text-align: center;
+}

@@ -19,4 +19,7 @@
     <script src="/ionncelrau/assets/js/counter.js"></script>
 
     <script src="/ionncelrau/assets/js/script.js"></script>
+    {% if site.tags != "" %}
+    {% include collecttags.html %}
+    {% endif %}
 </head>

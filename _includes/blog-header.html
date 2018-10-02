@@ -6,6 +6,12 @@
     <h1 id="titlu2" class="text-white text-center">{{page.title}}</h1>
 </div>
 
+<div class="blog-head-container">
+    <div class="blog-title">
+        {{page.title}}
+    </div>
+</div>
+
 <nav id="sticky-nav" class="navbar navbar-dark navbar-expand-lg">
     <a href="/ionncelrau/" class="navbar-brand">
         <img src="/ionncelrau/assets/img/company-logo.png" width="130" height="60">
@@ -25,3 +31,22 @@
 
 
 </nav>
+<div class="social-media" id="social-media">{% include social-media.html %}</div>
+
+<style>
+    .blog-head-container {
+        min-height: 18vw;
+        background-image: url(/ionncelrau/assets/img/blog.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .blog-title {
+        position: absolute;
+        left: 48%;
+        font-size: 3.2vw;
+        top: 6vw;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+    }
+</style>

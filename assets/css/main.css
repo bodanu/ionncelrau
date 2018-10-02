@@ -118,11 +118,9 @@ body {
   margin-top: 20px;
 }
 #footer {
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.8);
   bottom: 0;
   margin-bottom: 0;
-  background-position: bottom;
-  background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg");
 }
 .modal-header,
 .modal-footer {
@@ -228,7 +226,7 @@ body {
   position: fixed;
   max-width: 5%;
   bottom: 5vw;
-  padding: 28px;
+  padding: 68px;
   right: 1vw;
   font-size: 2vw;
   /* display: none; */
@@ -267,6 +265,18 @@ body {
 #links-list ul li {
   list-style: none;
   display: inline;
+  padding: 0;
+}
+#links-list ul li a {
+  padding: 0;
+}
+#links-list ul li a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+.footer-form {
+  width: 70%;
+  text-align: center;
 }
 
 #gallery-wrap .popup {
@@ -292,6 +302,7 @@ body {
 
 #gallery-wrap:hover .popup {
   opacity: 1;
+  z-index: 2;
 }
 
 #gallery-wrap {
@@ -305,9 +316,10 @@ body {
 
 #gallery-wrap img {
   transition: transform 0.2s;
-  z-index: 1;
 }
 
 #gallery-wrap img:hover {
   transform: scale(1.1);
+  position: relative;
+  z-index: 1;
 }
