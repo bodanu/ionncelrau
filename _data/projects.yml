@@ -1,0 +1,25 @@
+- title: Raspberry pi projects
+  url: https://www.raspberrypi.org/
+  image: assets/img/raspberry.jpg
+  projects:
+    - title: TV Box
+      description: Make your own TV set-top box out of a Raspberry Pi.
+      dificulty: easy
+      link: /
+      icon: assets/img/video.png
+    - title: Google Home/Amazon Alexa
+      description: Bring Google Home or Amazon Alexa into your home using your amazing single-board computer.
+      link: /
+      icon: assets/img/alien.png
+- title: Wirelless in home streaming
+  url: /
+  image: assets/img/stream.jpg
+  projects:
+    - title: Stream media
+      description: Wirellessly stream media content from your pc/phone to your TV.
+      link: /
+      icon: assets/img/music.png
+    - title: Stream games
+      description: Play video games from your living room comfort without using any wires.
+      link: /
+      icon: assets/img/game.png

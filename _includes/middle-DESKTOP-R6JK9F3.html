@@ -1,0 +1,130 @@
+<div id="middle-wrap" class="container-fluid row text-center">
+    <div id="links" class="col-sm-4">
+        <h2>Links</h2>
+        <hr>
+        <div class="feature">
+            <h4>Main page</h4>
+            <p>This is a link to my main page where you can find all
+                about me and my work.
+            </p>
+            <hr>
+            <h4>Contact me</h4>
+            <p>Here you can find acontact form to get in touch
+                with me.
+            </p>
+            <div class="col-md-8 text-center">
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#mymodal1">CONTACT</button>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="col-sm-4">
+        <h2>Projects</h2>
+        <hr>
+        <div class="feature">
+            <h4>All my projects so far!</h4>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://bodanu.github.io/ionncelrau/">
+                            <img class="d-block w-100" src="/ionncelrau/assets/img/company-logo.png" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://bodanu.github.io/responsive/">
+                            <img class="d-block w-100" src="/ionncelrau/assets/img/responsive.png" alt="Second slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://bodanu.github.io/SimpleWebsite/">
+                            <img class="d-block w-100" src="/ionncelrau/assets/img/aboutme.png" alt="Second slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://bodanu.github.io/">
+                            <img class="d-block w-100" src="/ionncelrau/assets/img/themechange.png" alt="Third slide">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="plans" class="col-sm-4">
+        <h2>Future Plans</h2>
+        <hr>
+        <h4>End world hunger!</h4>
+        <hr>
+        <h4>Become president</h4>
+        <hr>
+        <h4>Rule the world!!</h4>
+    </div>
+</div>
+
+
+
+
+<div id="counter-container" class="row">
+    {% include counter.html %}
+</div>
+
+
+
+{% include gallery.html %}
+<hr>
+<h1 class="text-center">Blog section</h1>
+<div id="blog-list" class="row">
+    <div class="col-sm-4">
+        <ul>
+            {% for post in site.posts %}
+            <li class="text-center">
+                <a class="text-center" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+                {{ post.excerpt }}{{post.date}}
+            </li><br><br><br><br><br>
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        {% for post in site.posts %}
+        <div id="pics" class="col">
+            <a href="{{site.baseurl}}{{ post.url }}"><img class="d-block w-100" src="{{site.baseurl}}/assets/img/{{post.image}}"></a>
+            <div class="content text-center">
+                {{post.title}}
+            </div>
+        </div><br>
+        <hr>
+
+        {% endfor %}
+    </div>
+    <div id="blog-description" class="col-sm-4 text-center">
+        <h4>Latest posts</h4>
+        <p>In this section you can find my latest posts, learn about anything new
+            and check out all the cool pictures from my collection.
+        </p>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Labore cum consectetur sint autem neque. Maiores
+            dolore numquam pariatur laborum minus nobis quisquam placeat corporis aut magnam
+            quas cumque quaerat iusto ducimus mollitia necessitatibus earum odio voluptatibus
+            reiciendis, aliquid ratione nulla illum? Fugit culpa fugiat eligendi numquam?
+            Saepe, suscipit vel soluta sit optio delectus culpa natus minima rerum tenetur
+            voluptates. Dolore corrupti excepturi quidem alias nulla esse odit voluptas nihil
+            ed ullam ea, nostrum numquam. Dolore ipsam distinctio repudiandae rem veniam
+            laboriosam, nulla qui deserunt dicta ut. Molestias ad magni fugiat quibusdam
+            impedit?
+            Omnis et voluptas ducimus neque temporibus. Voluptatem, temporibus.</p>
+    </div>
+</div>
+</div>

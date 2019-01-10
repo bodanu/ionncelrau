@@ -1,0 +1,53 @@
+<div class="header-wrapper">
+    <div class="nav-wrapper">
+        <div class="logo">
+            <a id="home-button" href="/ionncelrau/" class="site-logo">
+                <img src="/ionncelrau/assets/img/company-logo.png" width="130" height="60">
+            </a>
+        </div>
+        <nav role="navigation" class="site-navigation navbar navbar-expand-md">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="bar-container" onclick="myFunction(this)">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    {% assign links = site.data.navigation %}
+                    {% for link in links | sort: "weight" %}
+                    {% assign class = 'nav-item' %}
+                    {% if page.url contains link.url %}
+                    {% assign class = 'nav-item-active' %}
+                    {% endif %}
+                    {% if link.sublinks %}
+                    <li class="dropdown {{ class }}">
+                        <span href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">{{ link.title | upcase }}
+                            <span class="caret"></span></span>
+                        <ul class="dropdown-menu">
+                            {% for sublink in link.sublinks %}
+                            {% if sublink.title == 'separator' %}
+                            <li role="separator" class="divider"></li>
+                            {% else %}
+                            <li>
+                                <a class="nav-link" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="{{ class }}">
+                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title | upcase }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>

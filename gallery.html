@@ -1,0 +1,19 @@
+---
+layout: blog
+title: Image gallery
+subtitle: From Zero To Hero
+permalink: /gallery/
+order: 3
+---
+<div class="container-fluid">
+    <div class="row img-wrap">
+        {% assign images=site.data.images %}
+
+        {% for image in images %}
+        <div class="col-lg-4 col-md-4 img-container"><img class="img-responsive res-images" src="{{site.baseurl}}/{{image.image}}"
+                alt="{{image.alt}}"></div>
+        {% endfor %}
+
+
+    </div>
+</div>

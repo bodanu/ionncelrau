@@ -1,0 +1,8 @@
+<div>
+    <div class="list-group">
+        {% assign sidebar=site.data.sidenav %}
+        {% for item in sidebar %}
+        <a class="list-group-item" href="{{site.baseurl}}{{item.url}}">{{item.title}}</a>
+        {% endfor %}
+    </div>
+</div>

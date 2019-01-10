@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include blog-head.html %}
+
+<body>
+    {% include blog-header.html %}
+    <div class="post">
+
+
+        <h1>Tag: {{ page.tag | capitalize }}</h1>
+        {% for post in site.tags[page.tag] %}
+        <div class="row">
+            <div class="col-lg-4">
+
+
+                <h2> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> </h2>
+
+            </div>
+            <div class="col-lg-4">
+
+                {{ post.excerpt }}
+            </div>
+            <div class="text-center col-lg-4">
+
+                ({{ post.date | date_to_string }})<br>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    <hr>
+    {% include footer.html %}
+</body>

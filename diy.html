@@ -1,0 +1,39 @@
+---
+layout: blog
+title: Do it yourself
+subtitle: Fun projects for the tech guy in each of you
+permalink: /diy/
+order: 3
+---
+<div class="container-fluid">
+    <div class="row">
+        {% assign projects=site.data.projects %}
+        {% for item in projects %}
+
+        <div class="col-lg-6 projects">
+            <a class="project-link" href="{{item.url}}">
+                <h2 class="text-center">{{item.title}}</h2>
+                <div class="proj-img col-lg-12">
+                    <img class="img-fluid image" src="{{site.baseurl}}/{{item.image}}" alt="">
+
+            </a>
+        </div>
+
+        <div class="col-lg-12">
+            <h4 class="text-center">{{item.projects[0].title}}</h4>
+            <img src="{{site.baseurl}}/{{item.projects[0].icon}}" alt="">
+            <hr>
+            <p class="lead">{{item.projects[0].description}}</p>
+            <br>
+        </div>
+        <div class="col-lg-12">
+            <h4 class="text-center">{{item.projects[1].title}}</h4>
+            <img src="{{site.baseurl}}/{{item.projects[1].icon}}" alt="">
+            <hr>
+            <p class="lead">{{item.projects[1].description}}</p>
+            <br>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>

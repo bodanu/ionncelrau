@@ -1,0 +1,29 @@
+gallery:
+  - title: For future jobs
+    image: assets/img/gallery_job.jpg
+    target: /cvro.pdf
+    date: Aug 23, 2015
+    author: Bogdan Hiriscau
+    subtitle: View my CV
+    id: cv
+  - title: Social Media
+    image: assets/img/gallery_media.jpg
+    target: socialmedia/
+    date: Aug 23, 2016
+    author: Bogdan Hiriscau
+    subtitle: My social media interests
+    id: Sm
+  - title: Image gallery
+    image: assets/img/gallery_travel.jpg
+    target: gallery/
+    date: Aug 23, 2018
+    author: Bogdan Hiriscau
+    subtitle: From zero to hero in pictures
+    id: gall
+  - title: DIY for home
+    image: assets/img/gallery_dice.jpg
+    target: diy/
+    date: Aug 23, 2017
+    author: Bogdan Hiriscau
+    subtitle: Fun projects to try home
+    id: diy
