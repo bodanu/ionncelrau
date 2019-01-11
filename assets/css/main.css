@@ -323,3 +323,6 @@ body {
   position: relative;
   z-index: 1;
 }
+.d123form{
+max-width: 50%;
+}

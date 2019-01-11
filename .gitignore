@@ -1,3 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+node_modules
+149086-essential-set
+GLYPHCOLOR
+.tweet-cache
