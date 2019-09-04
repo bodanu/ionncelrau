@@ -1,8 +1,8 @@
-(function($) {
-  $.fn.countTo = function(options) {
+(function ($) {
+  $.fn.countTo = function (options) {
     options = options || {};
 
-    return $(this).each(function() {
+    return $(this).each(function () {
       // set options for current element
       var settings = $.extend(
         {},
@@ -84,10 +84,10 @@
   }
 })(jQuery);
 
-jQuery(function($) {
+jQuery(function ($) {
   // custom formatting example
   $(".count-number").data("countToOptions", {
-    formatter: function(value, options) {
+    formatter: function (value, options) {
       return value
         .toFixed(options.decimals)
         .replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");

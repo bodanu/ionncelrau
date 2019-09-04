@@ -5,6 +5,7 @@
 layout: main
 permalink: /
 identifier: home
+order: 1
 ---
 
 {% include social-media.html %}

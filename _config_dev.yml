@@ -18,7 +18,7 @@ email: ionncelrau@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Best option for all your problems is Ionncelrau Solutions!!
 baseurl: "/ionncelrau" # the subpath of your site, e.g. /blog
-url: "localhost:4000/ionncelrau" # the base hostname & protocol for your site, e.g. http://example.com
+url: "localhost:3000/ionncelrau" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BogdanHiriscau
 github_username: bodanu
 
@@ -46,3 +46,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude: [node_modules, gulpfile.js]

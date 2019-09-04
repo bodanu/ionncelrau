@@ -6,7 +6,7 @@ categories: jekyll update
 image: keyboard.jpg
 avatar: me.svg
 author: Admin
-tags: info anything admin
+tags: info anything ionncelrau
 excerpt_separator: <!--more-->
 ---
 

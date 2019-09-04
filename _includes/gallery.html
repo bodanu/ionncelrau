@@ -1,11 +1,20 @@
 <div class="row">
     {% for item in site.data.galley.gallery %}
     <div id="gallery-wrap" class="col-md-3 col-sm-6 col-xs-12">
-        <a href="{{item.target}}"><img class="img-fluid" src="{{site.baseurl}}/{{item.image}}" alt=""></a>
-        <div class="popup">
-            <p>Made by &copy;{{item.author}} on {{item.date}}</p>
-        </div>
+        <a id="{{item.id}}" href="{{site.baseurl}}/{{item.target}}"><img class="img-fluid" src="{{site.baseurl}}/{{item.image}}"
+                alt="">
+            <div class="popup2">
+                <p>{{item.title}}</p>
+                <p>{{item.subtitle}}</p>
+            </div>
+            {% if item.subtitle == blank and item.title == blank %}
+            <div class="popup">
+                <p>Made by &copy;{{item.author}} on {{item.date}}</p>
+            </div>
+            {% endif %}
+        </a>
     </div>
     {% endfor %}
+
 
 </div>

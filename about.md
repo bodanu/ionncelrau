@@ -2,6 +2,7 @@
 layout: blog
 title: About Me
 permalink: /about/
+order: 4
 ---
 
 <div>

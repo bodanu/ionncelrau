@@ -1,7 +1,9 @@
 .counter {
-  background-color: #203333;
+  background: rgb(3, 39, 56) !important;
   padding: 40px 0;
   color: azure;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .timer {
   font-weight: bolder !important;
