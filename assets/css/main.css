@@ -467,7 +467,7 @@ body {
 }
 .banner{
   height: 100%;
-  background-image: url("/ionncelrau/assets/img/stickman.jpeg");
+  background-image: url("/assets/img/stickman.jpeg");
   background-position: center;
   background-size: cover;
   filter: blur(5px);
