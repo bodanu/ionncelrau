@@ -255,12 +255,10 @@ body {
   right: 0;
 }
 .testimonials-wrapper{
- 
-  height: 100%;
-  padding-bottom: 10%;
-  padding-top: 55px !important;
   position: relative;
-  overflow: hidden;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background: rgb(3, 39, 56);
 }
 .testimonials-wrapper:before{
   content: "";
