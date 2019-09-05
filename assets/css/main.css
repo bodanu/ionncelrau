@@ -124,7 +124,7 @@ body {
   margin-top: 10%;
   margin-bottom: 10%;
   background: rgb(3, 39, 56);
-  max-width: 100%;
+  max-width: 100vw;
 }
 .counter-content{
   transform: rotate(-2.5deg);
@@ -262,7 +262,7 @@ body {
   position: relative;
   margin-top: 10%;
   margin-bottom: 15%;
-  max-width: 100%;
+  max-width: 100vw;
   background: rgb(3, 39, 56);
 }
 
