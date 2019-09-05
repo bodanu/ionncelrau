@@ -257,21 +257,11 @@ body {
 .testimonials-wrapper{
   position: relative;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   background: rgb(3, 39, 56);
 }
+
 .testimonials-wrapper:before{
-  content: "";
-  height: 0;
-  width: 0;
-  border-top: 100px solid rgb(3, 39, 56);
-  border-left: 800px solid rgb(3, 39, 56);
-  border-right: 100vw solid transparent;
-  position: absolute;
-  top: 100%;
-  right: 0;
-}
-.testimonials-wrapper:after{
   content: "";
   height: 0;
   width: 0;
@@ -281,6 +271,17 @@ body {
   position: absolute;
   bottom: 100%;
   left: 0;
+}
+.testimonials-wrapper:after{
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 100px solid rgb(3, 39, 56);
+  border-left: 800px solid rgb(3, 39, 56);
+  border-right: 100vw solid transparent;
+  position: absolute;
+  top: 100%;
+  right: 0;
 }
 .projects-wrapper{
   height: 100%;
