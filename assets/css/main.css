@@ -264,21 +264,25 @@ body {
 }
 .testimonials-wrapper:before{
   content: "";
+  height: 0;
+  width: 0;
+  border-top: 100px solid rgb(3, 39, 56);
+  border-left: 800px solid rgb(3, 39, 56);
+  border-right: 100vw solid transparent;
   position: absolute;
-  height: 124%;
-  width: 300%;
-  left: -100%;
-  transform: rotate(1.5deg);
-  background: linear-gradient( to bottom right, rgb(3, 39, 56), rgb(3, 39, 56));
+  top: 100%;
+  right: 0;
 }
 .testimonials-wrapper:after{
   content: "";
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid rgb(3, 39, 56);
+  border-right: 800px solid rgb(3, 39, 56);
+  border-left: 100vw solid transparent;
   position: absolute;
-  height: 124%;
-  width: 300%;
-  left: -200%;
-  transform: rotate(1.5deg);
-  background: rgb(255, 255, 255);
+  bottom: 100%;
+  left: 0;
 }
 .projects-wrapper{
   height: 100%;
