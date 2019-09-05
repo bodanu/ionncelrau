@@ -138,6 +138,7 @@ body {
   position: absolute;
   bottom: 100%;
   left: 0;
+  overflow: hidden;
 }
 #counter-container:after{
   content: "";
@@ -149,6 +150,7 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
+  overflow: hidden;
 }
 .prezentare{
   background-image: url("/assets/img/marketing.jpg");
@@ -272,6 +274,7 @@ body {
   position: absolute;
   bottom: 100%;
   left: 0;
+  overflow: hidden;
 }
 .testimonials-wrapper:after{
   content: "";
@@ -283,6 +286,7 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
+  overflow: hidden;
 }
 .projects-wrapper{
   height: 100%;
