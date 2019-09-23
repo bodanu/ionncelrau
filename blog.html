@@ -4,7 +4,7 @@ title: My blog
 permalink: /blog/
 ---
 <div id="blog-list" class="row">
-        <div id="blog-description" class="col-lg-12 col-sm-4 text-center">
+        <div id="blog-description" class="col-lg-12 col-xs-12 text-center">
                 <h4>Ultimele postari</h4>
                 <p>
                     Aici vei gasi ultimele postari publicate de mine.
@@ -13,12 +13,12 @@ permalink: /blog/
 
     {% for post in site.posts %}
 
-    <div class="col-lg-6 post-container">
+    <div class="col-lg-8 post-container">
         <div class="post-title">
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         </div>
         <div class="post-date">{{post.date}}</div>
-        <div class="col-lg-6 col-xs-12 post-image">
+        <div class="col-lg-12 col-xs-12 post-image">
             <a href="{{site.baseurl}}{{post.url}}"><img class="img-fluid" src="{{site.baseurl}}/assets/img/{{post.image}}"
                     alt="{{post.title}}"></a>
                     <a href="{{site.baseurl}}{{post.url}}"><div class="post-image-caption">{{post.excerpt}}</div></a>
