@@ -13,9 +13,9 @@ order: 4
     <p>Self-taught</p>
     <nav class="navbar2">
       <a href="#" class="disabled"><i class="fa fa-dribbble"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/HiriscauBogdan?ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/bogdan-hiriscau-651a07176/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/bogdan0hiriscau"><i class="fab fa-facebook"></i></a>
     </nav>
     <p><button id="four" type="button" data-toggle="modal" data-target="#mymodal1">Contact</button></p>
   </div>
